@@ -1,0 +1,181 @@
+html{
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  color: white;
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+ nav ul {
+  margin-right: 1rem;
+}
+
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.flex{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner{
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: white;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.service img.paper-icon{
+  width: 3.5rem;
+}
+
+.service img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.company{
+  display: flex;
+  justify-content: center;
+}
+
+.info{
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title{
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  background-color: cadetblue;
+}
+
+.copyright{
+  display: flex;
+  margin-top: 5rem;
+  background-color: azure;
+  align-items: center;
+}
+
+.copyright img{
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header{
+    height: 22rem;
+    padding-top: 0;
+  }
+  nav.container{
+    max-width: 100%;
+  }
+  .banner{
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  h1{
+    font-size: 1.33rem;
+  }
+}
+@@media only screen and (max-width: 480px) {
+  header{
+    height: 17rem;
+  }
+  nav.container{
+    max-width: 100%;
+  }
+  .banner{
+    padding: 1rem 4rem;
+    margin-top: 9rem;
+    background-position: 20%;
+  }
+  h1{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .service img.paper-icon{
+    margin-top: 3.77rem;
+  }
+  .service{
+    padding-top: 1.54rem;
+    margin-bottom: 3.77rem;
+  }
+  div{
+    font-size: 0.77rem;
+  }
+  p{
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+  }
+}
